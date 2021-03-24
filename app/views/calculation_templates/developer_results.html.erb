@@ -1,5 +1,5 @@
 <h1>
-  Accountant Crystal Ball Results
+  Developer Crystal Ball Results
 </h1>
 
 <dl>
@@ -22,7 +22,7 @@
     Your age Score
   </dt>
   <dd>
-    <%= @magic_age_score %>
+    <%= @magic_age_score.round(2) %>
   </dd>
 
   <dt>
@@ -57,10 +57,10 @@
     <h3>Our assessment of your score..</h3>
   </dt>
   <dd>
-    <%= if @success_score < 7
+    <%= if @success_score < 18
         p "Maybe this code monkey game is not the best career for you, try something requiring a little less problem solving and creativity"
         else
-        p "You are a natural, keep on keeping on down this bean counter road! "
+        p "You are a natural, keep on keeping on down this geek code monkey path! "
         end %>
         <a href="https://www.computerscience.org/careers/software-engineer/">Check this resource out</a>
 
@@ -68,7 +68,7 @@
 
 
 <div><button>
-<a href="/accountant/new">
+<a href="/">
   Try predict another career
 </a>
 <button></div>

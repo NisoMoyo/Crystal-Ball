@@ -14,7 +14,7 @@
     Your age Score
   </dt>
   <dd>
-    <%= @magic_age_score %>
+    <%= @magic_age_score.round(2) %>
   </dd>
 
   <dt>
@@ -24,12 +24,6 @@
     <%= @magic_experience_score.round(2) %>
   </dd>
 
-  <dt>
-    Your Quantitative Predictive Score
-  </dt>
-  <dd>
-    <%= @magic_sat_score.round(2) %>
-  </dd>
 
   <dt>
     Your Numerology Score
@@ -49,7 +43,7 @@
     <h3>Our assessment of your score..</h3>
   </dt>
   <dd>
-    <%= if @success_score < 7
+    <%= if @success_score < 16.56
         p "Maybe this number cruncher game is not the best career for you, try something a little less quant heavy"
         else
         p "You are a natural, keep on keeping on down this bean counter road! "
@@ -60,7 +54,7 @@
 
 
 <div><button>
-<a href="/accountant/new">
+<a href="/">
   Try predict another career
 </a>
 <button></div>
