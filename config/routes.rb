@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 #homepage
-get("/homepage/", { :controller => "application", :action => "homepage" })
+get("/", { :controller => "application", :action => "homepage" })
 
 #1
 get("/consultant/new/", { :controller => "application", :action => "blank_consultant_form" })

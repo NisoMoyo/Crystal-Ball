@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FinalProject</title>
+    <title>Omnicalc 1</title>
     <%= csrf_meta_tags %>
 
     <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
@@ -11,11 +11,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-
+    <%= stylesheet_link_tag    'application', media: 'all' %>
   </head>
 
   <body>
+    <table style="width: 100%" border="1">
+      <tr>
+        <td>
+          <strong>
+            <a href="/">
+               Career Homepage
+          </strong>
+        </td>
+
+        <td>
+          <a href="/accountant/new">
+            Accountant
+          </a>
+        </td>
+
+        <td>
+          <a href="/consultant/new">
+            Consultant
+          </a>
+        </td>
+
+        <td>
+          <a href="/developer/new">
+            Developer
+          </a>
+        </td>
+        
+      </tr>
+    </table>
     <%= yield %>
   </body>
 </html>

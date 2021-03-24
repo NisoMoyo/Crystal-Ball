@@ -1,0 +1,74 @@
+<h1>
+  Accountant Crystal Ball Results
+</h1>
+
+<dl>
+
+  <dt>
+    Your Problem Solving Score
+  </dt>
+  <dd>
+    <%= @magic_problem_score.round(2) %>
+  </dd>
+
+  <dt>
+    Your Education Score
+  </dt>
+  <dd>
+    <%= @magic_education_score.round(2) %>
+  </dd>
+
+  <dt>
+    Your age Score
+  </dt>
+  <dd>
+    <%= @magic_age_score %>
+  </dd>
+
+  <dt>
+    Your Experience Score
+  </dt>
+  <dd>
+    <%= @magic_experience_score.round(2) %>
+  </dd>
+
+  <dt>
+    Your Quantitative Predictive Score
+  </dt>
+  <dd>
+    <%= @magic_sat_score.round(2) %>
+  </dd>
+
+  <dt>
+    Your Numerology Score
+  </dt>
+  <dd>
+    <%= @magic_lucky_score.round(2) %>
+  </dd>
+
+  <dt>
+    <h3>Your Total Success Score</h3>
+  </dt>
+  <dd>
+    <%= @success_score.round(2) %>
+  </dd>
+
+  <dt>
+    <h3>Our assessment of your score..</h3>
+  </dt>
+  <dd>
+    <%= if @success_score < 7
+        p "Maybe this code monkey game is not the best career for you, try something requiring a little less problem solving and creativity"
+        else
+        p "You are a natural, keep on keeping on down this bean counter road! "
+        end %>
+        <a href="https://www.computerscience.org/careers/software-engineer/">Check this resource out</a>
+
+  </dd>
+
+
+<div><button>
+<a href="/accountant/new">
+  Try predict another career
+</a>
+<button></div>
